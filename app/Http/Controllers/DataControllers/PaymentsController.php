@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\DataControllers;
 
-use App\Models\DataModels\Payments;
+use App\Models\Payments;
 
 class PaymentsController
 {

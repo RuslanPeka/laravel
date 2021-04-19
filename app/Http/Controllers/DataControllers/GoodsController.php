@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\DataControllers;
 
-use App\Models\DataModels\Goods;
+use App\Models\Goods;
 
 class GoodsController
 {

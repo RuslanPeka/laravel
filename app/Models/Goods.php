@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Models\DataModels;
+namespace App\Models;
 
 use Illuminate\Support\Facades\DB;
 
-class Customers
+class Goods
 {
     public function getData()
     {
-        $customers = DB::table('customers')->get();
+        $goods = DB::table('goods')->get();
         echo '<pre>';
-        var_dump($customers);
+        var_dump($goods);
         echo '</pre>';
     }
 }

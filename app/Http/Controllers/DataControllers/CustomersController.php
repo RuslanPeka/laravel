@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\DataControllers;
 
-use App\Models\DataModels\Customers;
+use App\Models\Customers;
 
 class CustomersController
 {

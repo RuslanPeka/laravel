@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\DataControllers;
 
-use App\Models\DataModels\Orders;
+use App\Models\Orders;
 
 class OrdersController
 {
