@@ -2,8 +2,10 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Test;
-use App\Http\Controllers\DataControllers;
+use App\Http\Controllers\CustomersController;
+use App\Http\Controllers\GoodsController;
+use App\Http\Controllers\OrdersController;
+use App\Http\Controllers\PaymentsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,29 +22,18 @@ use App\Http\Controllers\DataControllers;
 //     return $request->user();
 // });
 
-// *** Моя вставка ***
-
-// Не сработавший вариант:
-// Route::prefix('test')->group(function () {
-//     Route::get('/test', 'Test\Test@index');
-// });
-
-Route::prefix('test')->group(function () {
-    Route::get('/test', [Test\Test::class, 'index']);
-});
-
 Route::prefix('customers')->group(function () {
-    Route::get('/customers', [DataControllers\CustomersController::class, 'index']);
+    Route::get('/customers', [CustomersController::class, 'index']);
 });
 
 Route::prefix('goods')->group(function () {
-    Route::get('/goods', [DataControllers\GoodsController::class, 'index']);
+    Route::get('/goods', [GoodsController::class, 'index']);
 });
 
 Route::prefix('orders')->group(function () {
-    Route::get('/orders', [DataControllers\OrdersController::class, 'index']);
+    Route::get('/orders', [OrdersController::class, 'index']);
 });
 
 Route::prefix('payments')->group(function () {
-    Route::get('/payments', [DataControllers\PaymentsController::class, 'index']);
-});
+    Route::get('/payments', [PaymentsController::class, 'index']);
+}); 

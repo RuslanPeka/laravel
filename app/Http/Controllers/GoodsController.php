@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\DataControllers;
+namespace App\Http\Controllers;
 
 use App\Models\Goods;
 
@@ -11,4 +11,4 @@ class GoodsController
         $objModel = new Goods;
         $objModel->getData();
     }
-}
+} 

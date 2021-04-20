@@ -2,10 +2,14 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
-class Orders
+class Orders extends Model
 {
+    use HasFactory;
+
     public function getData()
     {
         $orders = DB::table('orders')->get();
