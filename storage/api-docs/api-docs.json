@@ -1,0 +1,72 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "TEAT API",
+        "description": "Description of API",
+        "contact": {
+            "email": "test@gmail.com"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/customers": {
+            "delete": {
+                "tags": [
+                    "Customer"
+                ],
+                "summary": "Working with the Customers Model",
+                "responses": {
+                    "422": {
+                        "description": "All functions for working with the Customers Model"
+                    }
+                }
+            }
+        },
+        "/goods": {
+            "delete": {
+                "tags": [
+                    "Good"
+                ],
+                "summary": "Working with the Goods Model",
+                "responses": {
+                    "422": {
+                        "description": "All functions for working with the Goods Model"
+                    }
+                }
+            }
+        },
+        "/orders": {
+            "delete": {
+                "tags": [
+                    "Order"
+                ],
+                "summary": "Working with the Orders Model",
+                "responses": {
+                    "422": {
+                        "description": "All functions for working with the Orders Model"
+                    }
+                }
+            }
+        },
+        "/payments": {
+            "delete": {
+                "tags": [
+                    "Payment"
+                ],
+                "summary": "Working with the Payments Model",
+                "responses": {
+                    "422": {
+                        "description": "All functions for working with the Payments Model"
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}
